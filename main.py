@@ -9,10 +9,10 @@ from utilsdf.functions import bot_on
 from utilsdf.db import Database
 from utilsdf.vars import PREFIXES
     
-API_ID = '28386099'
-API_HASH = 'a0057fbf1ca49ce5e9d26fd4afd6e78b'
-BOT_TOKEN = '7195738934:AAE5ifhCN-JFDQ7aHjuioFWbi_4GgY9Noug'
-CHANNEL_LOGS = '-1001897182152'
+API_ID = '37757884'
+API_HASH = 'b8aff444a27656a255bb2032a28f99c0'
+BOT_TOKEN = '8414591679:AAE5q6T_urgaSEwbx7et7gTp8XRd6B8zLqU'
+CHANNEL_LOGS = '-1003837099461'
 
 app = Client(
     "bot",
@@ -69,12 +69,12 @@ async def user_ban(client: Client, m: Message):
                     continue
                 await m.chat.ban_member(user_id)
                 info=db.get_info_user(user_id)
-                await client.send_message(-1001897182152, f"<b>User eliminado: @{info['USERNAME']}</b>")
+                await client.send_message(-1003837099461, f"<b>User eliminado: @{info['USERNAME']}</b>")
 
         #         if not db.is_admin(m.from_user.id):
         #             return await m.reply(
         #                 """𝘽𝙤𝙩 𝙪𝙣𝙙𝙚𝙧 𝙈𝙖𝙣𝙩𝙚𝙣𝙞𝙚𝙣𝙘𝙚 ⚠️
-        # 𝙍𝙚𝙖𝙨𝙤𝙣 -» <code>Mantenimiento by @punjab_buy</code>
+        # 𝙍𝙚𝙖𝙨𝙤𝙣 -» <code>Mantenimiento by @zyndxvou</code>
         #        """
         #             )
         user_id = m.from_user.id
